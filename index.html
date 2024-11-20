@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edu-Blink</title>
+  <link rel="icon" href="./img/favicon.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles/coursesCat.css">
+  <link rel="stylesheet" href="styles/hover.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <main>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <section class="hero-section">
+      <nav class="main-nav">
+        <div class="nav-brand">
+          <a href="/" class="brand-link">
+            <h1><i class="ri-book-shelf-line"></i>E-Blink</h1>
+          </a>
+        </div>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Courses</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Mentors</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </div>
+        <div class="nav-auth">
+          <button class="auth-btn signin-btn">sign in</button>
+          <button class="auth-btn register-btn">
+            register <i class="ri-arrow-right-up-line"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            getting <span>quality</span> <br />
+            education is now <br />
+            more <span>easy</span>
+          </h1>
+          <p class="hero-description">
+            provides you with the latest online learning system and material
+            <br />that help your knowledge growing.
+          </p>
+          <div class="hero-buttons">
+            <button class="hero-btn primary-btn">
+              Get Started <i class="ri-arrow-right-line"></i>
+            </button>
+            <button class="hero-btn secondary-btn">Get free trial</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="circle-outer"></div>
+          <div class="circle-inner">
+            <div class="circle-dot"></div>
+          </div>
+          <div class="hero-img-container">
+            <img src="img/fee-banner.png" alt="Education Banner" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stats-category-section">
+      <div class="stats-container">
+        <div class="stats-box">
+          <div class="stats-icon-box courses-icon">
+            <span class="stats-icon"><i class="ri-book-marked-line"></i></span>
+          </div>
+          <div class="stats-text">
+            <h2 class="stats-number">10k+</h2>
+            <p class="stats-label">Total courses</p>
+          </div>
+        </div>
+        <div class="stats-box">
+          <div class="stats-icon-box mentors-icon">
+            <span class="stats-icon"><i class="ri-group-line"></i></span>
+          </div>
+          <div class="stats-text">
+            <h2 class="stats-number">500+</h2>
+            <p class="stats-label">Expert mentors</p>
+          </div>
+        </div>
+        <div class="stats-box">
+          <div class="stats-icon-box students-icon">
+            <span class="stats-icon"><i class="ri-dashboard-horizontal-line"></i></span>
+          </div>
+          <div class="stats-text">
+            <h2 class="stats-number">300+</h2>
+            <p class="stats-label">students globally</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-header">
+        <div class="category-title">
+          <h1>explore courses by category</h1>
+          <p>browse the course by category and find the one that suits you best</p>
+        </div>
+        <button class="view-all-btn">view all</button>
+      </div>
+
+      <div class="category-grid">
+        <div class="category-card web-dev">
+          <i class="ri-code-s-slash-line web-dev-icon"></i>
+          <div class="category-info">
+            <h3>Web Development</h3>
+            <p>350+ courses available</p>
+          </div>
+        </div>
+        <div class="category-card flutter-dev">
+          <i class="ri-flutter-line flutter-dev-icon"></i>
+          <div class="category-info">
+            <h3>Flutter Development</h3>
+            <p>280+ courses available</p>
+          </div>
+        </div>
+        <div class="category-card data-science">
+          <i class="ri-database-2-line data-science-icon"></i>
+          <div class="category-info">
+            <h3>Data Science</h3>
+            <p>200+ courses available</p>
+          </div>
+        </div>
+        <div class="category-card machine-learning">
+          <i class="ri-brain-line ml-icon"></i>
+          <div class="category-info">
+            <h3>Machine Learning</h3>
+            <p>180+ courses available</p>
+          </div>
+        </div>
+        <div class="category-card cybersecurity">
+          <i class="ri-shield-keyhole-line security-icon"></i>
+          <div class="category-info">
+            <h3>Cybersecurity</h3>
+            <p>150+ courses available</p>
+          </div>
+        </div>
+        <div class="category-card cloud">
+          <i class="ri-cloud-line cloud-icon"></i>
+          <div class="category-info">
+            <h3>Cloud Computing</h3>
+            <p>220+ courses available</p>
+          </div>
+        </div>
+        <div class="category-card ai">
+          <i class="ri-robot-line ai-icon"></i>
+          <div class="category-info">
+            <h3>Artificial Intelligence</h3>
+            <p>170+ courses available</p>
+          </div>
+        </div>
+        <div class="category-card devops">
+          <i class="ri-terminal-box-line devops-icon"></i>
+          <div class="category-info">
+            <h3>DevOps</h3>
+            <p>130+ courses available</p>
+          </div>
+        </div>
+        <div class="category-card blockchain">
+          <i class="ri-bit-coin-line blockchain-icon"></i>
+          <div class="category-info">
+            <h3>Blockchain Technology</h3>
+            <p>100+ courses available</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-section">
+      <div class="featured-header">
+        <div class="featured-title">
+          <h1>our featured courses</h1>
+          <p>find the right course for you</p>
+        </div>
+        <button class="view-all-btn">view all</button>
+      </div>
+
+      <div class="featured-grid">
+        <div class="featured-card">
+          <div class="featured-img">
+            <img src="img/course1.jpg" alt="Web Development Course" />
+            <span class="featured-tag">Bestseller</span>
+          </div>
+          <div class="featured-content">
+            <div class="course-type">
+              <i class="ri-code-s-slash-line"></i>
+              <span>Web Development</span>
+            </div>
+            <h3 class="course-title">Complete Web Development Course</h3>
+            <div class="course-stats">
+              <span><i class="ri-time-line"></i> 2h 30m</span>
+              <span><i class="ri-book-open-line"></i> 15 lessons</span>
+              <span><i class="ri-user-line"></i> Beginner</span>
+            </div>
+            <div class="course-footer">
+              <div class="instructor-info">
+                <img src="img/course1.jpg" alt="John Smith" />
+                <!-- <img src="img/instructor1.jpg" alt="John Smith" /> -->
+                <span>Harsh Sharma</span>
+              </div>
+              <div class="course-price">$99.99</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-img">
+            <img src="img/course2.jpg" alt="Data Science Course" />
+            <span class="featured-tag">New</span>
+          </div>
+          <div class="featured-content">
+            <div class="course-type">
+              <i class="ri-database-2-line"></i>
+              <span>Data Science</span>
+            </div>
+            <h3 class="course-title">Data Science Fundamentals</h3>
+            <div class="course-stats">
+              <span><i class="ri-time-line"></i> 3h 45m</span>
+              <span><i class="ri-book-open-line"></i> 20 lessons</span>
+              <span><i class="ri-user-line"></i> Intermediate</span>
+            </div>
+            <div class="course-footer">
+              <div class="instructor-info">
+                <!-- <img src="img/instructor2.jpg" alt="Sarah Johnson" /> -->
+                <img src="img/course1.jpg" alt="Harsh Sharma" />
+
+                <span>Harsh Sharma</span>
+              </div>
+              <div class="course-price">$89.99</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-img">
+            <img src="img/course3.webp" alt="Machine Learning Course" />
+            <span class="featured-tag">Popular</span>
+          </div>
+          <div class="featured-content">
+            <div class="course-type">
+              <i class="ri-brain-line"></i>
+              <span>Machine Learning</span>
+            </div>
+            <h3 class="course-title">Machine Learning Essentials</h3>
+            <div class="course-stats">
+              <span><i class="ri-time-line"></i> 4h 15m</span>
+              <span><i class="ri-book-open-line"></i> 25 lessons</span>
+              <span><i class="ri-user-line"></i> Advanced</span>
+            </div>
+            <div class="course-footer">
+              <div class="instructor-info">
+                <!-- <img src="img/instructor3.jpg" alt="Michael Brown" /> -->
+                <img src="img/course3.webp" alt="Michael Brown" />
+                 
+                <span>Akarsh Vyash</span>
+              </div>
+              <div class="course-price">$129.99</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial-section">
+      <div class="testimonial-header">
+        <div class="testimonial-title">
+          <h1>what our students say</h1>
+          <p>feedback from our amazing students</p>
+        </div>
+      </div>
+      <div class="swiper testimonialSwiper">
+        <div class="swiper-wrapper">
+          <!-- Testimonial 1 -->
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-quote">
+              <i class="ri-double-quotes-l"></i>
+              <p>The courses are well-structured and the instructors are highly knowledgeable. I've learned so much in such a short time!</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="img/testimonials/student1.jpg" alt="Student Avatar">
+              </div>
+              <div class="author-info">
+                <h3>Sarah Johnson</h3>
+                <p>Web Development Student</p>
+                <div class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-quote">
+              <i class="ri-double-quotes-l"></i>
+              <p>The platform is user-friendly and the course content is up-to-date with industry standards. Highly recommended!</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="img/testimonials/student2.png" alt="Student Avatar">
+              </div>
+              <div class="author-info">
+                <h3>Michael Chen</h3>
+                <p>Data Science Student</p>
+                <div class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-quote">
+              <i class="ri-double-quotes-l"></i>
+              <p>The mentors are incredibly supportive and the community is very engaging. It's been an amazing learning journey!</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="img/testimonials/student3.png" alt="Student Avatar">
+              </div>
+              <div class="author-info">
+                <h3>Emma Davis</h3>
+                <p>UX Design Student</p>
+                <div class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 4 -->
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-quote">
+              <i class="ri-double-quotes-l"></i>
+              <p>The interactive exercises and real-world projects have helped me build a strong portfolio. The platform exceeded my expectations!</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="img/testimonials/student4.png" alt="Student Avatar">
+              </div>
+              <div class="author-info">
+                <h3>Alex Thompson</h3>
+                <p>Mobile App Development Student</p>
+                <div class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 5 -->
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-quote">
+              <i class="ri-double-quotes-l"></i>
+              <p>The flexibility of learning at my own pace while getting expert guidance has been invaluable. The community support is amazing!</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="img/testimonials/student5.png" alt="Student Avatar">
+              </div>
+              <div class="author-info">
+                <h3>Sophia Rodriguez</h3>
+                <p>AI & Machine Learning Student</p>
+                <div class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="companies-section">
+      <div class="companies-container">
+        <div class="companies-content">
+          <h2>Top Companies Our Students Work With</h2>
+          <p>Our graduates have been hired by leading technology companies worldwide</p>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card">
+            <img src="./img/google.jpg" alt="Google">
+          </div>
+          <div class="company-card">
+            <img src="./img/microsoft.jpg" alt="Microsoft">
+          </div>
+          <div class="company-card">
+            <img src="./img/amazon.jpg" alt="Amazon">
+          </div>
+          <div class="company-card">
+            <img src="./img/meta.jpg" alt="Meta">
+          </div>
+          <div class="company-card">
+            <img src="./img/apple.jpg" alt="Apple">
+          </div>
+          <div class="company-card">
+            <img src="./img/netflix.jpg" alt="Netflix">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-section">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>Edu-Blink</h3>
+            <p>Empowering minds through quality education and innovative learning experiences.</p>
+            <div class="social-links">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Courses</a></li>
+              <li><a href="#">Instructors</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Lifestyle</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Edu-Blink. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

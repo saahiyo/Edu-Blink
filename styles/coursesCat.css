@@ -1,0 +1,118 @@
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 140px;
+}
+
+.category-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-title h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.category-title p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.view-all-btn {
+  padding: 0.9rem 3rem;
+  color: var(--secondary-color);
+  background-color: var(--white);
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.category-card {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--white);
+  border: 1px solid #89a0ff;
+}
+
+.category-card i {
+  font-size: 1.5rem;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.category-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.category-info p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+} 
+
+/* Category Card Colors */
+.web-dev i {
+  background-color: #E8EAFF;
+  color: #4B56D2;
+}
+
+.flutter-dev i {
+  background-color: #FFE8F7;
+  color: #D14D72;
+}
+
+.data-science i {
+  background-color: #E8FFF1;
+  color: #1B9C85;
+}
+
+.machine-learning i {
+  background-color: #FFF3E8;
+  color: #FF8B13;
+}
+
+.cybersecurity i {
+  background-color: #E8F6FF;
+  color: #0081C9;
+}
+
+.cloud i {
+  background-color: #F3E8FF;
+  color: #8F43EE;
+}
+
+.ai i {
+  background-color: #FFE8E8;
+  color: #E90064;
+}
+
+.devops i {
+  background-color: #FFFFE8;
+  color: #C07F00;
+}
+
+.blockchain i {
+  background-color: #E8FFF9;
+  color: #03C988;
+}
