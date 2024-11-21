@@ -466,7 +466,8 @@ main {
 
 /* Testimonial Section */
 .testimonial-section {
-  padding: 5rem 3rem;
+  padding: 80px 0;
+  overflow: hidden;
   background-color: var(--bg-light);
 }
 
@@ -487,18 +488,61 @@ main {
   font-size: 1.1rem;
 }
 
-.testimonialSwiper {
-  padding: 2rem 4rem;
+.testimonials-container {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.testimonials-container::before,
+.testimonials-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 2;
+}
+
+.testimonials-container::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-light) 0%, transparent 100%);
+}
+
+.testimonials-container::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-light) 0%, transparent 100%);
+}
+
+.testimonials-track {
+  display: flex;
+  gap: 30px;
+  animation: scroll 40s linear infinite;
+  width: fit-content;
+}
+
+
+.testimonials-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 5 - 150px)); /* 5 cards * (width + gap) */
+  }
 }
 
 .testimonial-card {
+  flex: 0 0 350px;
   background: var(--white);
-  border-radius: 1rem;
+  border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  height: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -513,20 +557,22 @@ main {
 .testimonial-quote i {
   font-size: 2rem;
   color: var(--primary-color);
-  margin-bottom: 1rem;
   display: block;
+  margin-bottom: 1rem;
 }
 
 .testimonial-quote p {
+  margin-top: 10px;
+  font-style: italic;
   color: var(--text-light);
-  font-size: 1rem;
   line-height: 1.6;
+  font-size: 1rem;
 }
 
 .testimonial-author {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 15px;
 }
 
 .author-avatar {
@@ -544,32 +590,36 @@ main {
 }
 
 .author-info h3 {
-  color: var(--text-dark);
   font-size: 1.1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 5px;
+  color: var(--text-dark);
 }
 
 .author-info p {
-  color: var(--text-light);
   font-size: 0.9rem;
+  color: var(--text-light);
   margin-bottom: 0.5rem;
 }
 
 .rating {
+  margin-top: 5px;
+}
+
+.rating i {
   color: #ffd700;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 /* Companies Section */
 .companies-section {
   background: var(--bg-light);
-  padding: 8rem 0;
+  padding: 80px 0;
 }
 
 .companies-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 20px;
 }
 
 .companies-content {
@@ -581,6 +631,7 @@ main {
   font-size: 2.5rem;
   color: var(--text-dark);
   margin-bottom: 1rem;
+  text-transform: capitalize;
 }
 
 .companies-content p {
@@ -592,32 +643,35 @@ main {
 
 .companies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
   align-items: center;
   justify-items: center;
 }
 
 .company-card {
-  background: var(--white);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-  width: 150px;
-  height: 150px;
+  background: var(--bg-light);
+  /* border-radius: 15px; */
+  width: 160px;
+  height: 160px;
+  scale: 1.2;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .company-card:hover {
   transform: translateY(-5px);
+  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); */
 }
 
 .company-card img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+  object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.7;
   transition: all 0.3s ease;
@@ -626,18 +680,27 @@ main {
 .company-card:hover img {
   filter: grayscale(0%);
   opacity: 1;
+  transform: scale(1.2);
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .companies-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
   }
   
+  .companies-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
   .company-card {
     width: 120px;
     height: 120px;
-    padding: 1.5rem;
+  }
+  
+  .companies-content h2 {
+    font-size: 1.8rem;
   }
 }
 

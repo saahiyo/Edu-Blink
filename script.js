@@ -1,9 +1,14 @@
-var swiper = new Swiper(".testimonialSwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  loop: true,
+// Clone testimonials for infinite scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.querySelector('.testimonials-track');
+  const cards = track.querySelectorAll('.testimonial-card');
+  
+  // Clone cards and append them to create the infinite effect
+  cards.forEach(card => {
+    const clone = card.cloneNode(true);
+    track.appendChild(clone);
+  });
 });
-
 
 // cursor following effect
 var cursor = document.querySelector(".cursor-dot");
